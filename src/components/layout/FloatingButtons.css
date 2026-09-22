@@ -1,0 +1,85 @@
+.floating-action-stack {
+  position: fixed;
+  left: 24px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  z-index: 990;
+}
+
+.floating-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  transition: var(--transition);
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.call-btn {
+  background-color: var(--primary);
+}
+
+.book-btn {
+  background-color: var(--navy);
+}
+
+/* Tooltip on hover */
+.tooltip {
+  position: absolute;
+  left: 115%;
+  background-color: var(--navy);
+  color: #ffffff;
+  font-size: 0.775rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--navy) transparent transparent;
+}
+
+.floating-btn:hover .tooltip {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+@media (max-width: 640px) {
+  .floating-action-stack {
+    left: 16px;
+    bottom: 20px;
+  }
+  .floating-btn {
+    width: 46px;
+    height: 46px;
+  }
+}

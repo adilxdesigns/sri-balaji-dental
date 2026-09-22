@@ -1,0 +1,363 @@
+.sparks-header-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Row 1: Brand White Header */
+.brand-header-row {
+  background-color: #ffffff;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.brand-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.logo-icon-badge {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #1565C0 0%, #00838F 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(21, 101, 192, 0.25);
+  flex-shrink: 0;
+}
+
+.dental-tooth-icon {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0F2C59;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+
+.logo-subtitle {
+  font-size: 0.725rem;
+  font-weight: 700;
+  color: #00838F;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* Contact Info Blocks (Sparks Style) */
+.header-contact-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-info-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: var(--transition);
+}
+
+.contact-info-block:hover {
+  transform: translateY(-1px);
+}
+
+.contact-icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #F0F7FF;
+  border: 1px solid #BAE6FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1565C0;
+  flex-shrink: 0;
+}
+
+.contact-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.725rem;
+  font-weight: 800;
+  color: #0F2C59;
+  letter-spacing: 0.5px;
+}
+
+.contact-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1565C0;
+}
+
+/* Row 2: Solid Blue Nav Bar */
+.blue-navbar-row {
+  background-color: #1565C0;
+  height: 50px;
+}
+
+.blue-nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  gap: 0.15rem;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  background-color: #0D47A1;
+}
+
+.nav-link.active-block {
+  background-color: #0B2545;
+  color: #ffffff;
+  box-shadow: inset 0 -3px 0 #38BDF8;
+}
+
+/* Mobile Toggle */
+.mobile-toggle-btn {
+  display: none;
+  background: transparent;
+  color: #0F2C59;
+  padding: 0.5rem;
+}
+
+.mobile-drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid #1565C0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 0.85rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0F2C59;
+  border-left: 4px solid transparent;
+  transition: var(--transition);
+}
+
+.mobile-nav-link:hover, .mobile-nav-link.active-mobile {
+  background-color: #E3F2FD;
+  color: #1565C0;
+  border-left-color: #1565C0;
+}
+
+/* Mobile Drawer Header */
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #E2E8F0;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.mobile-drawer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-drawer-clinic-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0F2C59;
+}
+
+.mobile-drawer-close {
+  background: #F1F5F9;
+  color: #0F2C59;
+  border: none;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.mobile-drawer-close:hover {
+  background: #E2E8F0;
+}
+
+/* Mobile Drawer Footer */
+.mobile-drawer-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.mobile-book-btn {
+  display: block;
+  text-align: center;
+  background-color: #1565C0;
+  color: #ffffff;
+  padding: 0.95rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 14px rgba(21, 101, 192, 0.3);
+  transition: var(--transition);
+}
+
+.mobile-book-btn:hover {
+  background-color: #0D47A1;
+}
+
+.mobile-call-btn {
+  display: block;
+  text-align: center;
+  background-color: #F0F7FF;
+  color: #1565C0;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 2px solid #BAE6FD;
+  transition: var(--transition);
+}
+
+.mobile-call-btn:hover {
+  background-color: #E3F2FD;
+}
+
+@media (max-width: 992px) {
+  .header-contact-group, .blue-navbar-row {
+    display: none;
+  }
+  .mobile-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background-color: #F0F7FF;
+    border: 1px solid #BAE6FD;
+    flex-shrink: 0;
+  }
+  .brand-header-container {
+    padding: 0.5rem 0;
+  }
+  .logo-title {
+    font-size: 1.15rem;
+  }
+  .logo-subtitle {
+    font-size: 0.65rem;
+  }
+  .logo-icon-badge {
+    width: 42px;
+    height: 42px;
+  }
+  .dental-tooth-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    border-bottom: none;
+    box-shadow: none;
+    padding: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-nav-menu {
+    flex: 1;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-header-row {
+    padding: 0.65rem 0;
+  }
+  .logo-title {
+    font-size: 1rem;
+  }
+  .logo-subtitle {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+  }
+  .logo-icon-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+  }
+}
+

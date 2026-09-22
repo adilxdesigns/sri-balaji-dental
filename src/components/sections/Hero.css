@@ -1,0 +1,186 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0F172A;
+}
+
+.full-bleed-hero-swiper {
+  width: 100%;
+  height: 560px;
+}
+
+.full-bleed-slide-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark gradient overlay blending photo smoothly into background */
+.hero-dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(11, 37, 69, 0.90) 0%, rgba(11, 37, 69, 0.70) 50%, rgba(11, 37, 69, 0.35) 100%);
+  z-index: 1;
+}
+
+.hero-full-bleed-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay-content {
+  max-width: 680px;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38BDF8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 1.15rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.full-bleed-heading {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 1.18;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.8px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.full-bleed-subtitle {
+  font-size: 1.2rem;
+  color: #E2E8F0;
+  line-height: 1.6;
+  margin-bottom: 2.25rem;
+  max-width: 620px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 0.95rem 2.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #1565C0;
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(21, 101, 192, 0.4);
+}
+
+.hero-btn:hover {
+  background-color: #0D47A1;
+  transform: translateY(-2px);
+}
+
+.hero-btn-outline {
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  transition: var(--transition);
+}
+
+.hero-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Swiper custom navigation arrows matching Sparks Dental */
+.full-bleed-hero-swiper .swiper-button-next,
+.full-bleed-hero-swiper .swiper-button-prev {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+
+.full-bleed-hero-swiper .swiper-button-next:after,
+.full-bleed-hero-swiper .swiper-button-prev:after {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.full-bleed-hero-swiper .swiper-button-next:hover,
+.full-bleed-hero-swiper .swiper-button-prev:hover {
+  background: #1565C0;
+  border-color: #1565C0;
+  color: #ffffff;
+}
+
+.full-bleed-hero-swiper .swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.5;
+}
+
+.full-bleed-hero-swiper .swiper-pagination-bullet-active {
+  background: #38BDF8 !important;
+  opacity: 1;
+  width: 28px !important;
+  border-radius: 6px !important;
+}
+
+@media (max-width: 1024px) {
+  .full-bleed-hero-swiper {
+    height: 500px;
+  }
+  .full-bleed-heading {
+    font-size: 2.35rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .full-bleed-hero-swiper {
+    height: 440px;
+  }
+  .full-bleed-heading {
+    font-size: 1.85rem;
+  }
+  .full-bleed-subtitle {
+    font-size: 1rem;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .full-bleed-hero-swiper .swiper-button-next,
+  .full-bleed-hero-swiper .swiper-button-prev {
+    display: none;
+  }
+}

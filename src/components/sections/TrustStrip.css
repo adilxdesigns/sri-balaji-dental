@@ -1,0 +1,58 @@
+.trust-strip {
+  background: linear-gradient(135deg, var(--teal) 0%, #006064 100%);
+  color: #ffffff;
+  padding: 1.75rem 0;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.trust-strip-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.trust-strip-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.trust-icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  backdrop-filter: blur(4px);
+}
+
+.trust-strip-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+.trust-cta-btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .trust-strip-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  .trust-strip-left {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .trust-strip-text {
+    font-size: 1.2rem;
+  }
+}
