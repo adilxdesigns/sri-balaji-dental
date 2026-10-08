@@ -6,10 +6,10 @@ const UtilityBar = () => {
   return (
     <div className="utility-bar">
       <div className="container utility-container">
-        {/* Left: Open Hours */}
+        {/* Left: Open Hours & Heritage */}
         <div className="utility-left">
           <Clock size={14} className="utility-icon" />
-          <span className="utility-hours-text">Monday - Saturday : 05:30 PM To 09:00 PM</span>
+          <span className="utility-hours-text">Serving Perambur Since 2016 | Mon - Sat: 05:30 PM To 09:00 PM</span>
         </div>
 
         {/* Right: Quick Links */}

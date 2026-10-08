@@ -30,7 +30,7 @@ const Navbar = ({ activeSection = 'home' }) => {
             </div>
             <div className="logo-text-group">
               <span className="logo-title">SRI BALAJI DENTAL</span>
-              <span className="logo-subtitle">Multispeciality & Implantology Centre</span>
+              <span className="logo-subtitle">Multispeciality & Implantology Centre • Est. 2016</span>
             </div>
           </a>
 

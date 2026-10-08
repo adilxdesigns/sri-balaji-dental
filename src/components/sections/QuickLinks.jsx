@@ -1,39 +1,39 @@
 import React from 'react';
-import { CalendarCheck, Stethoscope, Star, Compass, ArrowRight } from 'lucide-react';
+import { Award, Stethoscope, Sparkles, Star, ArrowRight } from 'lucide-react';
 import './QuickLinks.css';
 
 const quickLinksData = [
   {
-    id: 'appointments',
-    icon: <CalendarCheck size={28} />,
-    title: 'Appointments',
-    desc: 'Instant booking via WhatsApp or Phone',
-    linkHref: '#contact',
-    linkText: 'Know more'
+    id: 'directors',
+    icon: <Award size={28} />,
+    title: '33+ Years Mastery',
+    desc: 'Led by Dr. R. Ganesh & Gold Medalist Dr. R. Janani',
+    linkHref: '#about',
+    linkText: 'Meet Directors'
   },
   {
     id: 'implants',
     icon: <Stethoscope size={28} />,
-    title: 'Dental Implants',
-    desc: 'Permanent titanium teeth replacements',
+    title: 'Advanced Implantology',
+    desc: 'Permanent full-mouth restorations with precision implant systems',
     linkHref: '#services',
-    linkText: 'Know more'
+    linkText: 'Explore Implants'
   },
   {
-    id: 'reviews',
+    id: 'digital',
+    icon: <Sparkles size={28} />,
+    title: 'Modern Digital Scans',
+    desc: 'High-speed intraoral 3D scanners — zero messy putty molds',
+    linkHref: '#services',
+    linkText: 'Digital Dentistry'
+  },
+  {
+    id: 'hospital-model',
     icon: <Star size={28} />,
-    title: 'Patient Reviews',
-    desc: '4.9★ rating from 10,000+ happy smiles',
+    title: '5.0★ Hospital Model',
+    desc: 'BPS dentures, laser gums, & painless kids dentistry under anaesthesia',
     linkHref: '#testimonials',
-    linkText: 'Know more'
-  },
-  {
-    id: 'tour',
-    icon: <Compass size={28} />,
-    title: 'Virtual Tour',
-    desc: 'Explore our modern hygienic facility',
-    linkHref: '#gallery',
-    linkText: 'Know more'
+    linkText: 'Patient Reviews'
   }
 ];
 

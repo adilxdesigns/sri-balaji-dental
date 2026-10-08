@@ -21,12 +21,12 @@ const Footer = () => {
           </div>
 
           <p className="footer-bio">
-            Providing high-quality, trusted, and affordable dental care in Perambur, Chennai. Specializing in Dental Implants, Painless Root Canals, and Cosmetic Dentistry.
+            Serving Perambur Since 2016. Bringing over 33 years of combined surgical and diagnostic mastery directly to Paddy Field Road under a multi-disciplinary hospital model. Corporate-hospital excellence with transparent, honest family-practice pricing.
           </p>
 
           <div className="footer-badge-strip">
             <ShieldCheck size={16} />
-            <span>ISO Sterilized Standard Clinic</span>
+            <span>Serving Perambur Since 2016 • 5.0★ Rated</span>
           </div>
         </div>
 
@@ -35,24 +35,26 @@ const Footer = () => {
           <h4 className="footer-heading">Quick Links</h4>
           <ul className="footer-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Dental Services</a></li>
-            <li><a href="#gallery">Photo Gallery</a></li>
-            <li><a href="#testimonials">Patient Reviews</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About Our Directors</a></li>
+            <li><a href="#about">Elite Specialty Panel</a></li>
+            <li><a href="#services">Core Specialities</a></li>
+            <li><a href="#gallery">Clinic Infrastructure</a></li>
+            <li><a href="#testimonials">Patient Reviews (5.0★)</a></li>
+            <li><a href="#contact">Contact & Location</a></li>
           </ul>
         </div>
 
-        {/* Col 3: Treatments */}
+        {/* Col 3: Core Specialities */}
         <div className="footer-col">
-          <h4 className="footer-heading">Specialised Care</h4>
+          <h4 className="footer-heading">Core Clinical Specialities</h4>
           <ul className="footer-links">
-            <li><a href="#services">Dental Implants</a></li>
-            <li><a href="#services">Single-Sitting Root Canal</a></li>
-            <li><a href="#services">Teeth Whitening & Veneers</a></li>
-            <li><a href="#services">Pediatric Dental Care</a></li>
-            <li><a href="#services">Scaling & Tooth Polishing</a></li>
-            <li><a href="#services">Crowns & Dental Bridges</a></li>
+            <li><a href="#services">Advanced Implantology</a></li>
+            <li><a href="#services">Painless Root Canal (RCT)</a></li>
+            <li><a href="#services">Premium BPS Dentures</a></li>
+            <li><a href="#services">Kids Dentistry Under Anaesthesia</a></li>
+            <li><a href="#services">Advanced Laser Gum Surgery</a></li>
+            <li><a href="#services">Modern Digital Impressions</a></li>
+            <li><a href="#services">Cosmetic Smile Makeovers</a></li>
           </ul>
         </div>
 

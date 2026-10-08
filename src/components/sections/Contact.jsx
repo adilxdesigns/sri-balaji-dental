@@ -26,9 +26,9 @@ const Contact = () => {
       <div className="container">
         <div className="section-header">
           <span className="section-subtitle">GET IN TOUCH</span>
-          <h2 className="section-title">Contact Us & Location</h2>
+          <h2 className="section-title">Visit Our Clinic in Perambur</h2>
           <p className="section-desc">
-            Visit our clinic in Perambur or schedule your appointment directly via WhatsApp or Phone call.
+            Serving Perambur since 2016 on Paddy Field Road. Corporate-hospital capabilities with transparent family-practice pricing. Book instantly via WhatsApp or call our doctors.
           </p>
         </div>
 
@@ -120,47 +120,20 @@ const Contact = () => {
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     >
-                      <optgroup label="🦷 Implantology">
-                        <option value="Dental Implants (Single Tooth)">Dental Implants — Single Tooth</option>
-                        <option value="Dental Implants (Full Mouth)">Dental Implants — Full Mouth</option>
-                        <option value="All-on-4 / All-on-6 Implants">All-on-4 / All-on-6 Implants</option>
-                        <option value="Implant Supported Dentures">Implant Supported Dentures</option>
+                      <optgroup label="🌟 Core Clinical Specialities">
+                        <option value="Advanced Implantology & Full-Mouth Rehabilitation">Advanced Implantology & Full-Mouth Rehabilitation</option>
+                        <option value="Painless Root Canal Treatments (RCT)">Painless Root Canal Treatments (RCT - Single Visit)</option>
+                        <option value="Premium BPS Dentures">Premium BPS Dentures (Biofunctional Fit)</option>
+                        <option value="Painless Kids Dentistry under Anaesthesia">Painless Kids Dentistry under Anaesthesia / Sedation</option>
+                        <option value="Advanced Laser Gum Surgery">Advanced Laser Gum Surgery (Bloodless & Stitch-Free)</option>
+                        <option value="Modern Digital Impressions">Modern Digital Impressions & 3D Scanning</option>
+                        <option value="Cosmetic Dentistry & Smile Makeovers">Cosmetic Dentistry & Smile Makeovers</option>
                       </optgroup>
-                      <optgroup label="🔬 Root Canal & Endodontics">
-                        <option value="Root Canal Treatment">Root Canal Treatment (RCT)</option>
-                        <option value="Single-Sitting Root Canal">Single-Sitting Root Canal</option>
-                        <option value="Re-Root Canal Treatment">Re-Root Canal Treatment</option>
-                      </optgroup>
-                      <optgroup label="✨ Cosmetic Dentistry">
-                        <option value="Teeth Whitening">Teeth Whitening / Bleaching</option>
-                        <option value="Dental Veneers">Dental Veneers (Laminates)</option>
-                        <option value="Smile Makeover">Smile Makeover & Design</option>
-                        <option value="Composite Bonding">Composite Bonding</option>
-                      </optgroup>
-                      <optgroup label="🧒 Orthodontics & Alignment">
-                        <option value="Dental Braces">Dental Braces (Metal / Ceramic)</option>
-                        <option value="Invisible Aligners">Invisible Aligners (Clear Aligners)</option>
-                        <option value="Retainers">Retainers</option>
-                      </optgroup>
-                      <optgroup label="🦴 Oral Surgery & Extractions">
-                        <option value="Tooth Extraction">Tooth Extraction</option>
-                        <option value="Wisdom Tooth Removal">Wisdom Tooth Removal</option>
-                        <option value="Surgical Extractions">Surgical Extractions</option>
-                        <option value="Bone Grafting">Bone Grafting</option>
-                      </optgroup>
-                      <optgroup label="👦 Pediatric Dentistry">
-                        <option value="Kids Dental Checkup">Kids Dental Checkup</option>
-                        <option value="Milk Tooth Treatment">Milk Tooth Treatment / Pulpotomy</option>
-                        <option value="Fluoride Application">Fluoride Application & Pit Sealing</option>
-                        <option value="Kids Braces">Pediatric Orthodontics</option>
-                      </optgroup>
-                      <optgroup label="🩺 General & Preventive Dentistry">
-                        <option value="General Dental Checkup">General Dental Checkup</option>
-                        <option value="Teeth Scaling & Cleaning">Teeth Scaling & Cleaning</option>
-                        <option value="Dental Fillings">Dental Fillings (Composite / Amalgam)</option>
-                        <option value="Gum Treatment">Gum Treatment (Periodontics)</option>
-                        <option value="Dentures (Removable)">Dentures — Full / Partial</option>
-                        <option value="Crown & Bridge">Dental Crowns & Bridges</option>
+                      <optgroup label="🩺 Diagnostic & Specialist Consultations">
+                        <option value="Oral Pathology & Biopsy Consultation">Oral Pathology, Biopsy & Lesion Diagnosis (Dr. Janani)</option>
+                        <option value="Comprehensive Dental Checkup & Scaling">Comprehensive Dental Checkup & Professional Cleaning</option>
+                        <option value="Wisdom Tooth Removal & Surgery">Wisdom Tooth Removal & Minor Oral Surgery</option>
+                        <option value="Orthodontics & Clear Aligners">Orthodontics & Invisible Aligners</option>
                       </optgroup>
                     </select>
                   </div>

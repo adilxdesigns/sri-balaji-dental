@@ -10,27 +10,35 @@ import './Hero.css';
 const slidesData = [
   {
     id: 1,
-    tag: 'Multispeciality & Implantology',
-    title: 'Welcome to Sri Balaji Multispeciality Dental & Implantology Centre',
-    subtitle: 'A Dental office with extraordinary team providing Extraordinary Dentistry in Perambur, Chennai.',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80',
-    badge: 'Trusted Dental Experts'
+    tag: 'Serving Perambur Since 2016',
+    title: 'Over Three Decades of Combined Excellence & Advanced Digital Dentistry',
+    subtitle: 'Welcome to Sri Balaji Multispeciality Dental & Implantology Centre — bringing 33+ years of combined surgical & diagnostic mastery directly to Paddy Field Road, Perambur.',
+    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80',
+    badge: 'Flawless 5.0★ Reputation'
   },
   {
     id: 2,
-    tag: 'Advanced Dental Implants',
-    title: 'Restore Your Chewing Power with Permanent Titanium Implants',
-    subtitle: 'State-of-the-art implant procedures designed for maximum comfort, durability, and a natural smile.',
+    tag: 'Led by Dr. R. Ganesh (19 Yrs Exp)',
+    title: 'Advanced Implantology & Full-Mouth Rehabilitation',
+    subtitle: 'Permanent, lifelike tooth restorations using precision implant systems and a renowned, gentle, soft-spoken approach.',
     image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1600&q=80',
-    badge: '30+ Years Experience'
+    badge: 'Chief Implantologist & Public Health Dentist'
   },
   {
     id: 3,
-    tag: 'Painless Root Canal & Cosmetics',
-    title: 'Gentle, Single-Sitting Root Canal Treatments',
-    subtitle: 'Preserve your natural teeth painlessly with precision microscopic endodontic procedures.',
+    tag: 'Gold Medalist Oral Pathology & Digital Tech',
+    title: 'Diagnostic Mastery & High-Speed Digital Impressions',
+    subtitle: 'Led by Dr. R. Janani (TN Dr. M.G.R. Medical University Gold Medalist). Advanced mucosal biopsies, laser therapy & 3D intraoral digital scans without messy putty molds.',
+    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80',
+    badge: 'University Gold Medalist'
+  },
+  {
+    id: 4,
+    tag: 'Multi-Disciplinary Hospital Model',
+    title: 'Painless Single-Visit RCT, BPS Dentures & Kids Dentistry Under Anaesthesia',
+    subtitle: 'Corporate-hospital capabilities with an elite panel of attached specialists and the transparent, honest pricing of an independent family practice.',
     image: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1600&q=80',
-    badge: '100% Gentle Care'
+    badge: 'Elite Specialty Panel'
   }
 ];
 

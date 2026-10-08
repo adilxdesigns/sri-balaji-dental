@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Camera, Eye } from 'lucide-react';
+import kidsSmileGalleryImg from '../../assets/kids-smile-gallery.jpg';
+import kidsDentistryImg from '../../assets/kids-dentistry.jpg';
 import './Gallery.css';
 
 const galleryData = [
@@ -35,9 +37,15 @@ const galleryData = [
   },
   {
     id: 6,
-    title: 'Child Friendly Clinic Setup',
+    title: 'Happy Pediatric Patient Smile',
+    category: 'Smiles',
+    image: kidsSmileGalleryImg
+  },
+  {
+    id: 7,
+    title: 'Comfortable Child-Friendly Dental Suite',
     category: 'Facility',
-    image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80'
+    image: kidsDentistryImg
   }
 ];
 

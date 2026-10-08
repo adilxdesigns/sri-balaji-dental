@@ -1,20 +1,48 @@
 import React from 'react';
-import { MessageSquareText, Sparkles, ArrowRight } from 'lucide-react';
+import { Award, Star, ShieldCheck, Stethoscope, ArrowRight, MessageSquareText } from 'lucide-react';
 import './TrustStrip.css';
 
 const whatsappUrl = "https://wa.me/919360769576?text=Hi%20Doctor%2C%20I%20have%20a%20question%20regarding%20my%20dental%20health%20at%20Sri%20Balaji%20Dental%20Centre.";
+
+const trustPillars = [
+  {
+    icon: <Award size={20} />,
+    title: 'Serving Perambur',
+    highlight: 'Since 2016'
+  },
+  {
+    icon: <ShieldCheck size={20} />,
+    title: 'Surgical & Diagnostic Mastery',
+    highlight: '33+ Years Combined'
+  },
+  {
+    icon: <Star size={20} />,
+    title: 'Patient Reputation',
+    highlight: 'Flawless 5.0★ Rated'
+  },
+  {
+    icon: <Stethoscope size={20} />,
+    title: 'Hospital Care Model',
+    highlight: 'Specialists Under One Roof'
+  }
+];
 
 const TrustStrip = () => {
   return (
     <section className="trust-strip">
       <div className="container trust-strip-container">
-        <div className="trust-strip-left">
-          <div className="trust-icon-box">
-            <Sparkles size={24} />
-          </div>
-          <h2 className="trust-strip-text">
-            Your First Step Toward Complete Oral Health Starts Here
-          </h2>
+        <div className="trust-pillars-row">
+          {trustPillars.map((item, idx) => (
+            <div key={idx} className="trust-pillar-item">
+              <div className="trust-icon-box">
+                {item.icon}
+              </div>
+              <div className="trust-pillar-text">
+                <span className="trust-pillar-highlight">{item.highlight}</span>
+                <span className="trust-pillar-title">{item.title}</span>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="trust-strip-right">
@@ -25,7 +53,7 @@ const TrustStrip = () => {
             className="btn-white trust-cta-btn"
           >
             <MessageSquareText size={18} />
-            <span>Ask a Doctor</span>
+            <span>Consult on WhatsApp</span>
             <ArrowRight size={16} />
           </a>
         </div>

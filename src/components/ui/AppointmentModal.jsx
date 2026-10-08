@@ -73,12 +73,15 @@ const AppointmentModal = ({ isOpen, onClose }) => {
                 value={formData.service}
                 onChange={(e) => setFormData({ ...formData, service: e.target.value })}
               >
-                <option value="Dental Implants">Dental Implants</option>
-                <option value="Root Canal Treatment">Root Canal Treatment</option>
-                <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
-                <option value="General Consultation">General Consultation</option>
-                <option value="Pediatric Care">Pediatric Care</option>
-                <option value="Teeth Scaling & Cleaning">Teeth Scaling & Cleaning</option>
+                <option value="Advanced Implantology & Full-Mouth Rehab">Advanced Implantology & Full-Mouth Rehab</option>
+                <option value="Painless Root Canal (RCT Single Visit)">Painless Root Canal (RCT - Single Visit)</option>
+                <option value="Premium BPS Dentures">Premium BPS Dentures</option>
+                <option value="Kids Dentistry Under Anaesthesia">Painless Kids Dentistry Under Anaesthesia</option>
+                <option value="Advanced Laser Gum Surgery">Advanced Laser Gum Surgery</option>
+                <option value="Modern Digital Impressions">Modern Digital Impressions (3D Scan)</option>
+                <option value="Cosmetic Dentistry & Smile Makeover">Cosmetic Dentistry & Smile Makeover</option>
+                <option value="Oral Pathology & Biopsy (Dr. Janani)">Oral Pathology & Biopsy (Dr. Janani)</option>
+                <option value="General Consultation & Scaling">General Consultation & Scaling</option>
               </select>
             </div>
 
