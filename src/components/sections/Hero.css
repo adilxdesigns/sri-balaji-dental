@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #0F172A;
+  background-color: #F8FAFC;
 }
 
 .full-bleed-hero-swiper {
@@ -15,20 +15,25 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: center right;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
 
-/* Dark gradient overlay blending photo smoothly into background */
+/* Minimal translucent gradient: keeps original clinic photos vivid & clear without milky white haze or blur */
+.hero-light-overlay,
 .hero-dark-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgba(11, 37, 69, 0.90) 0%, rgba(11, 37, 69, 0.70) 50%, rgba(11, 37, 69, 0.35) 100%);
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0.65) 0%,
+      rgba(255, 255, 255, 0.45) 35%,
+      rgba(255, 255, 255, 0.15) 60%,
+      rgba(255, 255, 255, 0.0) 75%);
   z-index: 1;
 }
 
@@ -41,17 +46,19 @@
 
 .hero-overlay-content {
   max-width: 680px;
-  color: #ffffff;
-  padding: 2rem 0;
+  color: #0A1E3F;
+  padding: 2.25rem 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: rgba(56, 189, 248, 0.2);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  color: #38BDF8;
+  background-color: #E0F2FE;
+  border: 1px solid #BAE6FD;
+  color: #0284C7;
   font-size: 0.85rem;
   font-weight: 700;
   padding: 0.4rem 1.15rem;
@@ -59,25 +66,27 @@
   margin-bottom: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.15);
 }
 
 .full-bleed-heading {
   font-size: 3rem;
-  color: #ffffff;
+  color: #0A1E3F;
   font-weight: 800;
   line-height: 1.18;
   margin-bottom: 1.25rem;
   letter-spacing: -0.8px;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.95), 0 0 14px rgba(255, 255, 255, 0.85);
 }
 
 .full-bleed-subtitle {
   font-size: 1.2rem;
-  color: #E2E8F0;
+  color: #0F2C59;
   line-height: 1.6;
   margin-bottom: 2.25rem;
   max-width: 620px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95), 0 0 10px rgba(255, 255, 255, 0.75);
 }
 
 .hero-cta-group {
@@ -94,40 +103,46 @@
   background-color: #1565C0;
   color: #ffffff;
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 15px rgba(21, 101, 192, 0.4);
+  box-shadow: 0 4px 15px rgba(21, 101, 192, 0.35);
+  transition: var(--transition);
 }
 
 .hero-btn:hover {
   background-color: #0D47A1;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.4);
 }
 
 .hero-btn-outline {
   padding: 0.9rem 2rem;
   font-size: 0.95rem;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  font-weight: 700;
+  border: 2px solid #1565C0;
+  color: #1565C0;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.12);
   transition: var(--transition);
 }
 
 .hero-btn-outline:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #EFF6FF;
+  border-color: #0D47A1;
+  color: #0D47A1;
   transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(21, 101, 192, 0.2);
 }
 
-/* Swiper custom navigation arrows matching Sparks Dental */
+/* Swiper custom navigation arrows */
 .full-bleed-hero-swiper .swiper-button-next,
 .full-bleed-hero-swiper .swiper-button-prev {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
+  color: #0F2C59;
+  background: #ffffff;
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 4px 14px rgba(15, 44, 89, 0.14);
   transition: var(--transition);
 }
 
@@ -142,26 +157,40 @@
   background: #1565C0;
   border-color: #1565C0;
   color: #ffffff;
+  box-shadow: 0 6px 18px rgba(21, 101, 192, 0.35);
 }
 
 .full-bleed-hero-swiper .swiper-pagination-bullet {
-  background: #ffffff;
-  opacity: 0.5;
+  background: #64748B;
+  opacity: 0.6;
 }
 
 .full-bleed-hero-swiper .swiper-pagination-bullet-active {
-  background: #38BDF8 !important;
+  background: #1565C0 !important;
   opacity: 1;
   width: 28px !important;
   border-radius: 6px !important;
+  box-shadow: 0 2px 6px rgba(21, 101, 192, 0.35);
 }
 
 @media (max-width: 1024px) {
   .full-bleed-hero-swiper {
     height: 500px;
   }
+
   .full-bleed-heading {
     font-size: 2.35rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-light-overlay,
+  .hero-dark-overlay {
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.70) 0%,
+        rgba(255, 255, 255, 0.45) 50%,
+        rgba(255, 255, 255, 0.10) 100%);
   }
 }
 
@@ -169,16 +198,20 @@
   .full-bleed-hero-swiper {
     height: 440px;
   }
+
   .full-bleed-heading {
     font-size: 1.85rem;
   }
+
   .full-bleed-subtitle {
     font-size: 1rem;
   }
+
   .hero-cta-group {
     flex-direction: column;
     align-items: stretch;
   }
+
   .full-bleed-hero-swiper .swiper-button-next,
   .full-bleed-hero-swiper .swiper-button-prev {
     display: none;

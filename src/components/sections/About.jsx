@@ -14,9 +14,10 @@ import {
   Baby,
   Smile
 } from 'lucide-react';
+import { getAssetUrl } from './Gallery';
 import './About.css';
 
-const whatsappUrl = "https://wa.me/919360769576?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sri%20Balaji%20Dental%20Centre.";
+const whatsappUrl = "https://wa.me/919543709302?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Sri%20Balaji%20Dental%20Centre.";
 
 const specialtyPanel = [
   {
@@ -55,7 +56,7 @@ const About = () => {
             <div className="about-badge-row">
               <span className="about-badge">
                 <Award size={15} />
-                <span>Serving Perambur Since 2016</span>
+                <span>Serving Perambur Since 2010</span>
               </span>
               <span className="about-badge-accent">
                 <Sparkles size={14} />
@@ -68,7 +69,7 @@ const About = () => {
             </h2>
 
             <p className="about-paragraph lead-p">
-              Welcome to <strong>Sri Balaji Multispeciality Dental & Implantology Centre</strong>, an established landmark of trusted dental care serving the Perambur community since 2016.
+              Welcome to <strong>Sri Balaji Multispeciality Dental & Implantology Centre</strong>, an established landmark of trusted dental care serving the Perambur community since 2010.
             </p>
 
             <p className="about-paragraph">
@@ -127,7 +128,7 @@ const About = () => {
 
               <div className="glance-stats-list">
                 <div className="glance-stat-box">
-                  <div className="stat-big">2016</div>
+                  <div className="stat-big">2010</div>
                   <div className="stat-desc">Established landmark serving the Perambur community</div>
                 </div>
                 <div className="glance-stat-box">
@@ -136,7 +137,7 @@ const About = () => {
                 </div>
                 <div className="glance-stat-box">
                   <div className="stat-big">5.0 ★</div>
-                  <div className="stat-desc">Flawless patient reputation across 10+ years</div>
+                  <div className="stat-desc">Flawless patient reputation across 14+ years</div>
                 </div>
               </div>
 
@@ -147,7 +148,7 @@ const About = () => {
                 </div>
                 <div className="info-row">
                   <Clock size={16} />
-                  <span>Mon–Sat 5:30 PM – 9:00 PM (Sun Closed)</span>
+                  <span>Mon–Sat 5:30 PM – 9:00 PM (Sun: By Appt Only)</span>
                 </div>
               </div>
             </div>
@@ -169,7 +170,7 @@ const About = () => {
             <div className="director-card">
               <div className="director-image-wrapper">
                 <img
-                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80"
+                  src={getAssetUrl('assets/docotr_rams_img.jpeg')}
                   alt="Dr. R. Ganesh, BDS, MDS, PGCOI"
                   className="director-img"
                 />

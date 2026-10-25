@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Clock, Mail, Send, CheckCircle2 } from 'lucide-react';
+import InstagramIcon from '../ui/InstagramIcon';
 import './Contact.css';
 
 const Contact = () => {
@@ -16,7 +17,7 @@ const Contact = () => {
     e.preventDefault();
     // Redirect to WhatsApp with filled details
     const text = `Hi, I would like to book an appointment at Sri Balaji Dental Centre.\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nPreferred Time: ${formData.preferredTime}\nMessage: ${formData.message}`;
-    const url = `https://wa.me/919360769576?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/919543709302?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
     setSubmitted(true);
   };
@@ -28,7 +29,7 @@ const Contact = () => {
           <span className="section-subtitle">GET IN TOUCH</span>
           <h2 className="section-title">Visit Our Clinic in Perambur</h2>
           <p className="section-desc">
-            Serving Perambur since 2016 on Paddy Field Road. Corporate-hospital capabilities with transparent family-practice pricing. Book instantly via WhatsApp or call our doctors.
+            Serving Perambur since 2010 on Paddy Field Road. Corporate-hospital capabilities with transparent family-practice pricing. Book instantly via WhatsApp or call our clinic directly.
           </p>
         </div>
 
@@ -43,7 +44,7 @@ const Contact = () => {
               </div>
               <div className="info-text-group">
                 <h4>Clinic Address</h4>
-                <p>119/1, Paddy Field Rd, Chinnaiyan Colony, Perambur, Chennai, Tamil Nadu 600011</p>
+                <p>No. 119/1, Paddy Field Road, Chinnaiyan Colony, Perambur, Chennai - 600011</p>
               </div>
             </div>
 
@@ -52,9 +53,53 @@ const Contact = () => {
                 <Phone size={22} />
               </div>
               <div className="info-text-group">
-                <h4>Phone / Mobile</h4>
-                <p><a href="tel:09543709302" className="phone-link">095437 09302</a></p>
-                <p><a href="https://wa.me/919360769576" target="_blank" rel="noopener noreferrer" className="phone-link">WhatsApp: 93607 69576</a></p>
+                <h4>Phone / Contact Numbers</h4>
+                <p>
+                  <strong>Mobile:</strong>{' '}
+                  <a href="tel:06374653568" className="phone-link">63746 53568</a>
+                </p>
+                <p>
+                  <strong>Landline:</strong>{' '}
+                  <a href="tel:04425515420" className="phone-link">044 25515420</a>
+                </p>
+                <p>
+                  <strong>WhatsApp:</strong>{' '}
+                  <a href="https://wa.me/919543709302" target="_blank" rel="noopener noreferrer" className="phone-link">95437 09302</a>
+                </p>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">
+                <Mail size={22} />
+              </div>
+              <div className="info-text-group">
+                <h4>Email Address</h4>
+                <p>
+                  <a href="mailto:sribalajidental2026@gmail.com" className="phone-link">
+                    sribalajidental2026@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon insta-info-icon">
+                <InstagramIcon size={22} color="#ffffff" />
+              </div>
+              <div className="info-text-group">
+                <h4>Instagram Profile</h4>
+                <p>
+                  <a
+                    href="https://www.instagram.com/sri_balaji_dental_perambur_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="phone-link insta-profile-link"
+                  >
+                    @sri_balaji_dental_perambur_
+                  </a>
+                </p>
+                <span className="insta-card-hint">Follow for smile makeovers, clinical cases & dental care tips</span>
               </div>
             </div>
 
@@ -63,9 +108,9 @@ const Contact = () => {
                 <Clock size={22} />
               </div>
               <div className="info-text-group">
-                <h4>Working Hours</h4>
+                <h4>Consultation Hours</h4>
                 <p><strong>Mon – Sat:</strong> 5:30 PM – 9:00 PM</p>
-                <p className="closed-tag"><strong>Sunday:</strong> Closed</p>
+                <p className="appt-tag"><strong>Sunday:</strong> By Appointment Only</p>
               </div>
             </div>
 

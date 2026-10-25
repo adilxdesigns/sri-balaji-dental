@@ -17,7 +17,7 @@ const AppointmentModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const text = `Hi Sri Balaji Dental Team,\nI would like to book an appointment:\n- Name: ${formData.name}\n- Phone: ${formData.phone}\n- Treatment: ${formData.service}\n- Preferred Date: ${formData.date || 'Earliest Available'}\n- Time Slot: ${formData.timeSlot}\n- Notes: ${formData.notes || 'None'}`;
-    const url = `https://wa.me/919360769576?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/919543709302?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
     onClose();
   };

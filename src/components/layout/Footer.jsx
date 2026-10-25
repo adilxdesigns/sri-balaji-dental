@@ -1,5 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Clock, Mail, ShieldCheck, Heart, ArrowUp } from 'lucide-react';
+import InstagramIcon from '../ui/InstagramIcon';
+import brandLogo from '../../assets/logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,9 +12,7 @@ const Footer = () => {
         <div className="footer-col brand-col">
           <div className="footer-logo">
             <div className="footer-logo-badge">
-              <svg viewBox="0 0 24 24" className="footer-tooth-icon" fill="currentColor">
-                <path d="M17 2H7C5.34 2 4 3.34 4 5v5c0 4.42 2.87 8.17 6.84 9.5.37.12.76.19 1.16.19s.79-.07 1.16-.19C17.13 18.17 20 14.42 20 10V5c0-1.66-1.34-3-3-3zm-5 15.5c-3.1-1.12-5-4.07-5-7.5V5h10v5c0 3.43-1.9 6.38-5 7.5z"/>
-              </svg>
+              <img src={brandLogo} alt="Sri Balaji Dental Clinic" className="footer-logo-img" />
             </div>
             <div className="footer-brand-text">
               <span className="footer-brand-title">Sri Balaji</span>
@@ -21,12 +21,24 @@ const Footer = () => {
           </div>
 
           <p className="footer-bio">
-            Serving Perambur Since 2016. Bringing over 33 years of combined surgical and diagnostic mastery directly to Paddy Field Road under a multi-disciplinary hospital model. Corporate-hospital excellence with transparent, honest family-practice pricing.
+            Serving Perambur Since 2010. Bringing over 33 years of combined surgical and diagnostic mastery directly to Paddy Field Road under a multi-disciplinary hospital model. Corporate-hospital excellence with transparent, honest family-practice pricing.
           </p>
 
-          <div className="footer-badge-strip">
-            <ShieldCheck size={16} />
-            <span>Serving Perambur Since 2016 • 5.0★ Rated</span>
+          <div className="footer-badges-group">
+            <div className="footer-badge-strip">
+              <ShieldCheck size={16} />
+              <span>Serving Perambur Since 2010 • 5.0★ Rated</span>
+            </div>
+            <a
+              href="https://www.instagram.com/sri_balaji_dental_perambur_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-insta-badge"
+              title="Follow us on Instagram"
+            >
+              <InstagramIcon size={15} />
+              <span>@sri_balaji_dental_perambur_</span>
+            </a>
           </div>
         </div>
 
@@ -64,20 +76,41 @@ const Footer = () => {
           
           <div className="footer-info-row">
             <MapPin size={18} className="footer-info-icon" />
-            <span>119/1, Paddy Field Rd, Chinnaiyan Colony, Perambur, Chennai - 600011</span>
+            <span>No. 119/1, Paddy Field Road, Perambur, Chennai - 600011</span>
           </div>
 
           <div className="footer-info-row">
             <Phone size={18} className="footer-info-icon" />
             <div>
-              <p><a href="tel:09543709302">095437 09302</a></p>
-              <p><a href="https://wa.me/919360769576" target="_blank" rel="noopener noreferrer">WA: 93607 69576</a></p>
+              <p><a href="tel:06374653568">Mobile: 63746 53568</a></p>
+              <p><a href="tel:04425515420">Landline: 044 25515420</a></p>
+              <p><a href="https://wa.me/919543709302" target="_blank" rel="noopener noreferrer">WhatsApp: 95437 09302</a></p>
             </div>
           </div>
 
           <div className="footer-info-row">
+            <Mail size={18} className="footer-info-icon" />
+            <a href="mailto:sribalajidental2026@gmail.com" className="footer-email-link">
+              sribalajidental2026@gmail.com
+            </a>
+          </div>
+
+          <div className="footer-info-row">
+            <InstagramIcon size={18} className="footer-info-icon footer-insta-icon" />
+            <a
+              href="https://www.instagram.com/sri_balaji_dental_perambur_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-email-link"
+              title="Sri Balaji Dental Instagram"
+            >
+              @sri_balaji_dental_perambur_
+            </a>
+          </div>
+
+          <div className="footer-info-row">
             <Clock size={18} className="footer-info-icon" />
-            <span>Mon–Sat: 5:30 PM – 9:00 PM<br/>Sunday Closed</span>
+            <span>Mon–Sat: 5:30 PM – 9:00 PM<br/><strong>Sunday:</strong> By Appointment Only</span>
           </div>
         </div>
       </div>

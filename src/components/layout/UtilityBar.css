@@ -63,6 +63,19 @@
   font-weight: 600;
 }
 
+.insta-highlight {
+  color: #F472B6;
+  font-weight: 600;
+}
+
+.insta-highlight:hover {
+  color: #F9A8D4;
+}
+
+.utility-insta-icon {
+  color: #F472B6;
+}
+
 .utility-sep {
   color: rgba(255, 255, 255, 0.3);
   font-size: 0.75rem;

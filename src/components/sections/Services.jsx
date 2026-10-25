@@ -7,6 +7,7 @@ import {
   Award
 } from 'lucide-react';
 import kidsDentistryImg from '../../assets/kids-dentistry.jpg';
+import { getAssetUrl } from './Gallery';
 import './Services.css';
 
 const servicesData = [
@@ -39,7 +40,8 @@ const servicesData = [
       'Zero pain protocol with gentle localized anesthesia',
       'Permanent hermetic seal to prevent reinfection'
     ],
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80',
+    image: getAssetUrl('assets/docotr handling patient.jpeg'),
+    imgFit: 'contain',
     tag: 'Tooth Preservation'
   },
   {
@@ -55,7 +57,8 @@ const servicesData = [
       'Premium wear-resistant composite teeth & lifelike gums',
       'Custom fabricated to exact oral anatomy contours'
     ],
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80',
+    image: getAssetUrl('assets/bps denture.jpeg'),
+    imgFit: 'contain',
     tag: 'Prosthodontics'
   },
   {
@@ -87,7 +90,7 @@ const servicesData = [
       'Laser gum depigmentation & aesthetic smile contouring',
       'Accelerated tissue regeneration & rapid healing'
     ],
-    image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80',
+    image: getAssetUrl('assets/laser_gum_surgery.png'),
     tag: 'Periodontics & Lasers'
   },
   {
@@ -103,7 +106,7 @@ const servicesData = [
       'Micron-accurate margins for crowns, bridges & veneers',
       'Faster turnaround time with automated digital lab workflows'
     ],
-    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80',
+    image: getAssetUrl('assets/modern_digital_impressions.png'),
     tag: 'Digital Dentistry'
   },
   {
@@ -119,12 +122,12 @@ const servicesData = [
       'Composite bonding for minor chips & spacing closures',
       'Digital smile makeover planning tailored to your face'
     ],
-    image: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=800&q=80',
+    image: getAssetUrl('assets/doctor_nurse_headcap_authentic_v2.jpg'),
     tag: 'Cosmetic Smile'
   }
 ];
 
-const whatsappUrl = "https://wa.me/919360769576?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20dental%20treatments%20at%20Sri%20Balaji%20Dental.";
+const whatsappUrl = "https://wa.me/919543709302?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20dental%20treatments%20at%20Sri%20Balaji%20Dental.";
 
 const Services = () => {
   return (
@@ -146,11 +149,12 @@ const Services = () => {
               key={service.id} 
               className={`service-card-v2 ${service.id === 'implants' ? 'featured-card' : ''}`}
             >
-              <div className="service-image-container">
+              <div className="service-image-container" style={service.imgFit === 'contain' ? { backgroundColor: '#0F172A' } : {}}>
                 <img
                   src={service.image}
                   alt={service.title}
                   className="service-card-img"
+                  style={service.imgFit === 'contain' ? { objectFit: 'contain', objectPosition: 'center' } : {}}
                 />
                 <div className="service-img-overlay"></div>
                 <div className="service-badge-pill">{service.badge}</div>
@@ -179,7 +183,7 @@ const Services = () => {
               {/* Bottom Card Footer */}
               <div className="service-card-footer">
                 <a 
-                  href={`https://wa.me/919360769576?text=Hi%2C%20I%20would%20like%20to%20consult%20regarding%20${encodeURIComponent(service.title)}%20at%20Sri%20Balaji%20Dental.`}
+                  href={`https://wa.me/919543709302?text=Hi%2C%20I%20would%20like%20to%20consult%20regarding%20${encodeURIComponent(service.title)}%20at%20Sri%20Balaji%20Dental.`}
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="service-cta-btn"
@@ -202,16 +206,16 @@ const Services = () => {
             <div>
               <h4 className="promise-title">Corporate-Hospital Capabilities. Family-Practice Pricing.</h4>
               <p className="promise-desc">
-                Serving Perambur since 2016 with a flawless 5.0-star reputation. We never compromise on sterile protocols, specialist quality, or transparent fees.
+                Serving Perambur since 2010 with a flawless 5.0-star reputation. We never compromise on sterile protocols, specialist quality, or transparent fees.
               </p>
             </div>
           </div>
           <div className="promise-strip-right">
             <a 
-              href="tel:09543709302" 
+              href="tel:06374653568" 
               className="btn-white"
             >
-              <span>Call: 095437 09302</span>
+              <span>Call: 063746 53568</span>
             </a>
           </div>
         </div>

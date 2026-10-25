@@ -76,8 +76,36 @@
   text-decoration: underline;
 }
 
+.insta-info-icon {
+  background: linear-gradient(135deg, #F58529 0%, #D62976 50%, #962FBF 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(214, 41, 118, 0.35);
+}
+
+.insta-profile-link {
+  color: #D62976 !important;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.insta-profile-link:hover {
+  color: #962FBF !important;
+}
+
+.insta-card-hint {
+  display: block;
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
 .closed-tag {
   color: #E11D48 !important;
+}
+
+.appt-tag {
+  color: #0284C7 !important;
+  font-weight: 600;
 }
 
 .emergency-notice {

@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Calendar, Phone, ArrowRight, ShieldCheck } from 'lucide-react';
+import { getAssetUrl } from './Gallery';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -10,39 +11,34 @@ import './Hero.css';
 const slidesData = [
   {
     id: 1,
-    tag: 'Serving Perambur Since 2016',
+    tag: 'Serving Perambur Since 2010',
     title: 'Over Three Decades of Combined Excellence & Advanced Digital Dentistry',
     subtitle: 'Welcome to Sri Balaji Multispeciality Dental & Implantology Centre — bringing 33+ years of combined surgical & diagnostic mastery directly to Paddy Field Road, Perambur.',
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80',
+    image: getAssetUrl('assets/doctor_nurse_headcap_authentic_v2.jpg'),
+    bgPosition: 'center right',
     badge: 'Flawless 5.0★ Reputation'
   },
   {
     id: 2,
-    tag: 'Led by Dr. R. Ganesh (19 Yrs Exp)',
-    title: 'Advanced Implantology & Full-Mouth Rehabilitation',
-    subtitle: 'Permanent, lifelike tooth restorations using precision implant systems and a renowned, gentle, soft-spoken approach.',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1600&q=80',
-    badge: 'Chief Implantologist & Public Health Dentist'
+    tag: 'Advanced Laser & Minimally Invasive Care',
+    title: 'Advanced Laser Dentistry & Gentle Patient-First Dental Care',
+    subtitle: 'Minimally invasive laser treatments, permanent precision implants, and lifelong oral health with a renowned, gentle approach.',
+    image: getAssetUrl('assets/laser_surgery_clean_wall_v2.jpg'),
+    bgPosition: 'center right',
+    badge: 'State-of-the-Art Laser Operatory'
   },
   {
     id: 3,
-    tag: 'Gold Medalist Oral Pathology & Digital Tech',
-    title: 'Diagnostic Mastery & High-Speed Digital Impressions',
-    subtitle: 'Led by Dr. R. Janani (TN Dr. M.G.R. Medical University Gold Medalist). Advanced mucosal biopsies, laser therapy & 3D intraoral digital scans without messy putty molds.',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1600&q=80',
-    badge: 'University Gold Medalist'
-  },
-  {
-    id: 4,
-    tag: 'Multi-Disciplinary Hospital Model',
-    title: 'Painless Single-Visit RCT, BPS Dentures & Kids Dentistry Under Anaesthesia',
-    subtitle: 'Corporate-hospital capabilities with an elite panel of attached specialists and the transparent, honest pricing of an independent family practice.',
-    image: 'https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1600&q=80',
-    badge: 'Elite Specialty Panel'
+    tag: 'Hospital-Grade Sterile Protocols',
+    title: 'Multi-Disciplinary Dental Excellence & Complete Safety',
+    subtitle: 'Multi-stage autoclave sterilization, cutting-edge diagnostic technology, and the transparent, honest pricing of a trusted family dental practice.',
+    image: getAssetUrl('assets/nurse_autoclave_authentic_v2.jpg'),
+    bgPosition: 'center right',
+    badge: '100% Sterile & Patient Safe'
   }
 ];
 
-const whatsappUrl = "https://wa.me/919360769576?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sri%20Balaji%20Multispeciality%20Dental%20%26%20Implantology%20Centre.";
+const whatsappUrl = "https://wa.me/919543709302?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sri%20Balaji%20Multispeciality%20Dental%20%26%20Implantology%20Centre.";
 
 const Hero = () => {
   return (
@@ -59,40 +55,43 @@ const Hero = () => {
       >
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div 
-              className="full-bleed-slide-bg" 
-              style={{ backgroundImage: `url(${slide.image})` }}
+            <div
+              className="full-bleed-slide-bg"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundPosition: slide.bgPosition || 'center right'
+              }}
             >
-              <div className="hero-dark-overlay"></div>
-              
+              <div className="hero-light-overlay"></div>
+
               <div className="container hero-full-bleed-container">
                 <div className="hero-overlay-content">
                   <div className="hero-badge">
                     <ShieldCheck size={16} />
                     <span>{slide.tag}</span>
                   </div>
-                  
+
                   <h1 className="full-bleed-heading">{slide.title}</h1>
                   <p className="full-bleed-subtitle">{slide.subtitle}</p>
-                  
+
                   <div className="hero-cta-group">
-                    <a 
-                      href={whatsappUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="btn-primary hero-btn"
                     >
                       <Calendar size={18} />
                       <span>Book An Appointment</span>
                       <ArrowRight size={16} />
                     </a>
-                    
-                    <a 
-                      href="tel:09543709302" 
-                      className="btn-outline-white hero-btn-outline"
+
+                    <a
+                      href="tel:06374653568"
+                      className="hero-btn-outline"
                     >
                       <Phone size={18} />
-                      <span>Call: 095437 09302</span>
+                      <span>Call: 063746 53568</span>
                     </a>
                   </div>
                 </div>

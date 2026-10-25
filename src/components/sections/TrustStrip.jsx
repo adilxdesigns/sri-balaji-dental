@@ -2,13 +2,13 @@ import React from 'react';
 import { Award, Star, ShieldCheck, Stethoscope, ArrowRight, MessageSquareText } from 'lucide-react';
 import './TrustStrip.css';
 
-const whatsappUrl = "https://wa.me/919360769576?text=Hi%20Doctor%2C%20I%20have%20a%20question%20regarding%20my%20dental%20health%20at%20Sri%20Balaji%20Dental%20Centre.";
+const whatsappUrl = "https://wa.me/919543709302?text=Hi%20Doctor%2C%20I%20have%20a%20question%20regarding%20my%20dental%20health%20at%20Sri%20Balaji%20Dental%20Centre.";
 
 const trustPillars = [
   {
     icon: <Award size={20} />,
     title: 'Serving Perambur',
-    highlight: 'Since 2016'
+    highlight: 'Since 2010'
   },
   {
     icon: <ShieldCheck size={20} />,

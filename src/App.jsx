@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import UtilityBar from './components/layout/UtilityBar';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import TrustStrip from './components/sections/TrustStrip';
@@ -39,9 +38,8 @@ function App() {
 
   return (
     <div className="app-main-wrapper">
-      {/* SmilesIndia style Utility Bar & Main Nav */}
+      {/* Main Navbar */}
       <header className="sticky-header-group">
-        <UtilityBar onOpenModal={() => setIsModalOpen(true)} />
         <Navbar activeSection={activeSection} />
       </header>
 

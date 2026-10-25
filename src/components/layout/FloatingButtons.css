@@ -32,6 +32,11 @@
   background-color: #25D366;
 }
 
+.insta-floating-btn {
+  background: linear-gradient(135deg, #F58529 0%, #D62976 50%, #962FBF 100%);
+  box-shadow: 0 8px 24px rgba(214, 41, 118, 0.35);
+}
+
 .call-btn {
   background-color: var(--primary);
 }

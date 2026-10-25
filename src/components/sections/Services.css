@@ -179,10 +179,6 @@
   color: #FFFFFF;
 }
 
-<<<<<<< HEAD
-@media (max-width: 992px) {
-  .services-grid {
-=======
 /* Practice Promise Strip */
 .practice-promise-strip {
   background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
@@ -235,19 +231,13 @@
 
 /* Responsive */
 @media (max-width: 1100px) {
-  .services-grid-seven {
->>>>>>> 1b0c6b5 (Save local changes)
+  .services-grid-seven,
+  .services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 576px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.85rem;
-=======
 @media (max-width: 900px) {
   .practice-promise-strip {
     flex-direction: column;
@@ -266,9 +256,9 @@
 }
 
 @media (max-width: 640px) {
-  .services-grid-seven {
+  .services-grid-seven,
+  .services-grid {
     grid-template-columns: 1fr;
->>>>>>> 1b0c6b5 (Save local changes)
   }
   .service-image-container {
     height: 140px;
