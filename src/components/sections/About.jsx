@@ -203,7 +203,7 @@ const About = () => {
             <div className="director-card gold-medalist-card">
               <div className="director-image-wrapper">
                 <img
-                  src="https://images.unsplash.com/photo-1594824813583-f3659247656d?auto=format&fit=crop&w=800&q=80"
+                  src={getAssetUrl('assets/dr_janani.jpg')}
                   alt="Dr. R. Janani, BDS, MDS"
                   className="director-img"
                 />
