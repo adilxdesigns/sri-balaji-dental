@@ -11,18 +11,18 @@ import './Hero.css';
 const slidesData = [
   {
     id: 1,
-    tag: 'Serving Perambur Since 2010',
-    title: 'Over Three Decades of Combined Excellence & Advanced Digital Dentistry',
-    subtitle: 'Welcome to Sri Balaji Multispeciality Dental & Implantology Centre — bringing 33+ years of combined surgical & diagnostic mastery directly to Paddy Field Road, Perambur.',
+    tag: 'Top-Rated Dental Clinic in Perambur Since 2010',
+    title: 'Sri Balaji Dental — Advanced Dental Care & Implant Centre in Perambur',
+    subtitle: 'Looking for the best dental clinic near Perambur? Sri Balaji Multispeciality Dental & Implantology Centre on Paddy Field Road brings 33+ years of combined surgical & diagnostic mastery directly to you.',
     image: getAssetUrl('assets/doctor_nurse_headcap_authentic_v2.jpg'),
     bgPosition: 'center right',
     badge: 'Flawless 5.0★ Reputation'
   },
   {
     id: 2,
-    tag: 'Advanced Laser & Minimally Invasive Care',
-    title: 'Advanced Laser Dentistry & Gentle Patient-First Dental Care',
-    subtitle: 'Minimally invasive laser treatments, permanent precision implants, and lifelong oral health with a renowned, gentle approach.',
+    tag: 'Advanced Laser & Dental Implants in Perambur',
+    title: 'Precision Dental Implants & Painless Laser Dentistry in Perambur',
+    subtitle: 'Minimally invasive laser treatments, permanent precision implants, and lifelong oral health with a gentle, patient-first approach near Perambur.',
     image: getAssetUrl('assets/laser_surgery_clean_wall_v2.jpg'),
     bgPosition: 'center right',
     badge: 'State-of-the-Art Laser Operatory'

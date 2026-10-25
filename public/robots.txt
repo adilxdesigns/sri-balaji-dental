@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sribalajidental.in/sitemap.xml
