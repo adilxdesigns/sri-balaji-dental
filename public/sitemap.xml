@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sribalajidental.in/</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://sribalajidental.in/#about</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sribalajidental.in/#services</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sribalajidental.in/#gallery</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sribalajidental.in/#testimonials</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sribalajidental.in/#contact</loc>
-    <lastmod>2026-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://sribalajidental.in/assets/logo-square.png</image:loc>
+      <image:title>Sri Balaji Multispeciality Dental and Implantology Centre Perambur</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sribalajidental.in/assets/docotr_handling_patient_hero.jpeg</image:loc>
+      <image:title>Best Dental Clinic in Perambur Chennai - Dr. R. Ganesh</image:title>
+    </image:image>
   </url>
 </urlset>
+
